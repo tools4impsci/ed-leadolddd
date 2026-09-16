@@ -5,10 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ED-LEAD Data Explorer</title>
-    <script type="module" crossorigin src="./assets/index-DsSnWTO0.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Kee_QjdW.css">
+    <script type="module" crossorigin src="./assets/index-ugyf6Vge.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DrFLvR9c.css">
   </head>
   <body>
+    <script>
+      (function() {
+        try {
+          var localTheme = localStorage.getItem('edlead_theme');
+          var theme = localTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>
